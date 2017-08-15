@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+defaultTasks 'jar'
+
+version = '1.0'
+
+jar {
+	baseName = 'M2_p2_build'
+}
+
+jar {
+    manifest {
+        attributes  'Implementation-Title' : 'M2_build',
+					'Implementation-Version' : version,
+					'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain',
+					'Class-Path' : '../../lib/resources.jar'
+    }
+}
+
+
+dependencies {
+    compile files('lib/resources.jar')
+}
+
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,32 @@
+apply plugin: 'java'
+defaultTasks 'jar'
+
+version = '1.1'
+
+//for when we actually have a class for running this program
+//mainClassName='src.main'
+
+repositories {
+	mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes  'baseName' : 'm2app',
+                    'Implementation-Title' : 'Patrick_M2_Gradle',
+		    'Implementation-Version' : version
+    }
+}
+
+dependencies {
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '3.6.7.Final'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+sourceSets {
+  main {
+    java {
+      include 'lib/resources.jar'
+    }
+  }
+}

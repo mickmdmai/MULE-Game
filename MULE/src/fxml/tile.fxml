@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+
+<StackPane fx:id="pane" onMouseClicked="#select" onMouseEntered="#mouseEntered" onMouseExited="#mouseExited" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TileController">
+   <children>
+      <ImageView fx:id="bg" fitHeight="160.0" fitWidth="133.3" pickOnBounds="true" />
+      <ImageView fx:id="icon" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" />
+      <VBox alignment="BOTTOM_CENTER">
+         <children>
+            <Label fx:id="label" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <Rectangle fx:id="rect" disable="true" fill="TRANSPARENT" height="160.0" pickOnBounds="true" stroke="TRANSPARENT" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="7.0" width="133.3" />
+   </children>
+</StackPane>

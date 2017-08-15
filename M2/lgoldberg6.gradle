@@ -1,0 +1,22 @@
+apply plugin: 'java'
+defaultTasks 'jar'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        attributes	'baseName' : 'gradle_M2',
+                    	'Implementation-Title' : 'M2_build',
+			'Implementation-Version' : version
+			'Main-Class' : 'edu/gatech/oad/antlab/pkg1/AntLabMain',
+			'Class-Path' : '../../lib/resources.jar'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'lib', include: ['*.jar'])
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
