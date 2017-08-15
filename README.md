@@ -9,20 +9,12 @@ To use the debug mode of the game, pass "debug" in as the first and only argumen
 
 Team Members
 
-Name	Email
-Chris Blackstone	cblackstone7@gatech.edu
-Mickey Maisuria	mmaisuria3@gatech.edu
-Edward Foyle	efoyle3@gatech.edu
-Laurel Goldberg	lgoldberg6@gatech.edu
-Patrick Caruso	pcaruso6@gatech.ecu
-M2
+Person1.txt - Edward Foyle - efoyle3@gatech.edu
 
-Person1.txt - Edward Foyle
+Person2.txt - Chris Blackstone - cblackstone7@gatech.edu
 
-Person2.txt - Chris Blackstone
+Person3.txt - Laurel Goldberg - lgoldberg6@gatech.edu
 
-Person3.txt - Laurel Goldberg
+Person4.txt - Mayur Maisuria - mmaisuria3@gatech.edu
 
-Person4.txt - Mayur Maisuria
-
-Person5.txt - Patrick Caruso
+Person5.txt - Patrick Caruso - pcaruso6@gatech.ecu
